@@ -2,7 +2,7 @@
 
 High-fidelity simulation for real-world decision making.
 
-👉 [Visit the website](https://your-username.github.io)
+👉 [Visit the website]([https://your-username.github.io](https://jaledingham.github.io/biomodelling.github.io/))
 
 ---
 
