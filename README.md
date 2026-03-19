@@ -1,17 +1,11 @@
-<!-- Premium BioModelling Consultancy GitHub Pages Template -->
+<!-- Minimal Premium BioModelling Consultancy Template -->
 
 <h1 align="center">BioModelling Consultancy</h1>
-<p align="center"><em>High-Fidelity Simulation. Real-World Decisions.</em></p>
+<p align="center"><em>Simulation that drives real-world decisions</em></p>
 
 <p align="center">
-  <a href="#contact"><strong>Get in touch</strong></a>
+  <img src="images/hero.jpg" width="800" />
 </p>
-
----
-
-## About Us
-
-We help organisations make better decisions through advanced multiphysics bio-modelling. Our work integrates biology, chemistry, and physics into robust simulation frameworks that reduce risk, accelerate development, and uncover insights that experiments alone cannot provide.
 
 ---
 
@@ -22,37 +16,25 @@ We help organisations make better decisions through advanced multiphysics bio-mo
 <tr>
 <td width="33%" valign="top">
 
-### Modelling & Simulation
+### Modelling
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-- Multiphysics modelling
-- Process simulation
-- Custom model development
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 </td>
 
 <td width="33%" valign="top">
 
-### Consultancy & Strategy
+### Strategy
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-- Technical due diligence
-- Process optimisation
-- Feasibility studies
+Sed do eiusmod tempor incididunt ut labore et dolore.
 
 </td>
 
 <td width="33%" valign="top">
 
-### Implementation & Tools
+### Delivery
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-- Digital twins
-- Simulation tools
-- Data integration
+Ut enim ad minim veniam, quis nostrud exercitation.
 
 </td>
 </tr>
@@ -61,62 +43,45 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 ---
 
-## How We Work
+## Selected Work
 
-We take a pragmatic, outcome-driven approach:
-
-1. **Understand the problem** – We focus on the decision you need to make, not just the model.
-2. **Build the right model** – Only as complex as necessary, but no simpler.
-3. **Validate and refine** – Grounded in data and real-world constraints.
-4. **Deliver actionable insight** – Clear outputs that drive decisions.
-
----
-
-## Industries We Support
-
-- Biotechnology
-- Water & wastewater treatment
-- Energy systems
-- Advanced manufacturing
-- Research institutions
+<p align="center">
+  <img src="images/project1.jpg" width="250" />
+  <img src="images/project2.jpg" width="250" />
+  <img src="images/project3.jpg" width="250" />
+</p>
 
 ---
 
-## Why Work With Us
+## About
 
-- **Deep technical expertise** across physics, chemistry, and biology
-- **Fast, focused delivery** without unnecessary complexity
-- **Clear communication** – no black-box modelling
-- **Commercial awareness** – models built for decisions, not just accuracy
-
----
-
-## Selected Applications
-
-- Process optimisation for industrial systems
-- Scale-up modelling for emerging technologies
-- Transport phenomena in biological environments
-- Electrochemical system modelling
+We build high-fidelity models that reduce uncertainty and enable better decisions.
 
 ---
 
 ## Contact
 
-<p id="contact"></p>
-
-<strong>Email:</strong> your.email@example.com  
-<strong>Location:</strong> United Kingdom  
-
-<img src="images/ZK photo.jpg" width="500" />
+<strong>Email:</strong> your.email@example.com
 
 ---
 
-## Notes
+## How to Add Images
 
 <!--
-TO USE THIS:
-1. Replace all Lorem Ipsum text
-2. Tailor services to your actual offering
-3. Add links (LinkedIn, publications, case studies)
-4. Consider renaming repo to enable GitHub Pages (username.github.io)
+1. Create a folder in your repo called "images"
+2. Upload your images into that folder
+3. Reference them like this:
+   <img src="images/your-image.jpg" width="500" />
+
+Tips:
+- Keep file sizes small (<500KB ideally)
+- Use wide images for banners (like hero.jpg)
+- Use square images for grids
 -->
+
+---
+
+<p align="center">
+  <img src="images/ZK photo.jpg" width="400" />
+</p>
+
