@@ -107,6 +107,8 @@ We take a pragmatic, outcome-driven approach:
 <strong>Email:</strong> your.email@example.com  
 <strong>Location:</strong> United Kingdom  
 
+<img src="images/ZK photo.jpg" width="500" />
+
 ---
 
 ## Notes
