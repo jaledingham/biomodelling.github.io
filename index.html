@@ -114,10 +114,30 @@
             border-top: 4px solid var(--accent-color);
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             transition: transform 0.3s ease;
+            text-align: center; /* Centers the text and image inside the card */
         }
 
         .card:hover {
             transform: translateY(-5px);
+        }
+
+        /* Profile Picture Styling */
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Makes the image a perfect circle */
+            object-fit: cover; /* Prevents the image from stretching */
+            margin: 0 auto 1.5rem auto; /* Centers the image and adds space below it */
+            display: block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            filter: grayscale(100%); /* Makes it black and white */
+            transition: filter 0.4s ease, transform 0.4s ease;
+        }
+
+        /* Adds color back when hovering over the card */
+        .card:hover .profile-pic {
+            filter: grayscale(0%);
+            transform: scale(1.05);
         }
 
         .card h3 {
@@ -137,6 +157,7 @@
         .card p {
             font-size: 0.95rem;
             color: #4a5568;
+            text-align: left; /* Keeps the bio paragraph aligned nicely to the left */
         }
 
         /* Call to Action Footer */
@@ -176,7 +197,7 @@
 <body>
 
     <header>
-        <div class="logo">Zoltan BioModellica</div>
+        <div class="logo">BioModellica</div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -197,18 +218,21 @@
         <div class="grid">
             
             <div class="card">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200" alt="Dr. Jane Doe" class="profile-pic">
                 <h3>Dr. Jane Doe</h3>
                 <h4>Principal Consultant</h4>
                 <p>Jane specializes in computational modelling of complex biological systems and decision-making under uncertainty. She has over 15 years of experience bridging academic research and corporate strategy.</p>
             </div>
 
             <div class="card">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200" alt="John Smith" class="profile-pic">
                 <h3>John Smith</h3>
                 <h4>Senior Bio-Data Analyst</h4>
                 <p>John specializes in developing process and economic models to analyze biotechnology capabilities. He has delivered strategic consultancy for diverse institutions ranging from national governments to startups.</p>
             </div>
 
             <div class="card">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=200&h=200" alt="Dr. Alan Turing" class="profile-pic">
                 <h3>Dr. Alan Turing</h3>
                 <h4>Associate Consultant</h4>
                 <p>Alan brings extensive experience in numerical optimization and agent-based modelling. He focuses on mapping complex biological pipelines with an emphasis on cost optimization and project risk reduction.</p>
