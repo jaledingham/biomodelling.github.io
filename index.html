@@ -1,45 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>BioModelling Consultancy</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Modelling Consultancy</title>
+    <style>
+        /* CSS: This part makes the website look slick and modern */
+        :root {
+            --primary-color: #1a202c; /* Deep professional slate */
+            --accent-color: #319795; /* Bio-tech teal */
+            --bg-color: #f7fafc;
+            --text-color: #2d3748;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 5%;
+            background: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #e2e8f0;
+        }
+
+        /* Team / Profiles Section */
+        .content-section {
+            padding: 5rem 5%;
+        }
+
+        .section-title {
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            letter-spacing: 1.5px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-top: 4px solid var(--accent-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .card h4 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #4a5568;
+        }
+
+        /* Call to Action Footer */
+        .cta {
+            background: #e2e8f0;
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+            color: var(--primary-color);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2.5rem;
+            background: var(--accent-color);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-radius: 3px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #287e7c;
+        }
+    </style>
 </head>
 <body>
 
-<section class="hero">
-  <h1>BioModelling Consultancy</h1>
-  <p>Simulation that drives real-world decisions</p>
-</section>
+    <header>
+        <div class="logo">BioModellica</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="three-col">
-  <div>
-    <h2>Modelling</h2>
-    <p>Lorem ipsum dolor sit amet.</p>
-  </div>
-  <div>
-    <h2>Strategy</h2>
-    <p>Lorem ipsum dolor sit amet.</p>
-  </div>
-  <div>
-    <h2>Delivery</h2>
-    <p>Lorem ipsum dolor sit amet.</p>
-  </div>
-</section>
+    <section class="hero" id="about">
+        <h1>Bridging Biology, Data, and Business</h1>
+        <p>We are a strategic bio modelling consultancy firm with world-leading expertise in the use of computational systems to develop actionable insights. Our team combines academic rigor with real-world industry experience.</p>
+    </section>
 
-<section class="image-block">
-  <img src="images/project1.jpg">
-</section>
+    <section class="content-section" id="team">
+        <h2 class="section-title">The Team</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <h3>Dr. Jane Doe</h3>
+                <h4>Principal Consultant</h4>
+                <p>Jane specializes in computational modelling of complex biological systems and decision-making under uncertainty. She has over 15 years of experience bridging academic research and corporate strategy.</p>
+            </div>
 
-<section class="about">
-  <h2>About</h2>
-  <p>We build high-fidelity models that reduce uncertainty.</p>
-</section>
+            <div class="card">
+                <h3>John Smith</h3>
+                <h4>Senior Bio-Data Analyst</h4>
+                <p>John specializes in developing process and economic models to analyze biotechnology capabilities. He has delivered strategic consultancy for diverse institutions ranging from national governments to startups.</p>
+            </div>
 
-<section class="contact">
-  <h2>Contact</h2>
-  <p>your.email@example.com</p>
-</section>
+            <div class="card">
+                <h3>Dr. Alan Turing</h3>
+                <h4>Associate Consultant</h4>
+                <p>Alan brings extensive experience in numerical optimization and agent-based modelling. He focuses on mapping complex biological pipelines with an emphasis on cost optimization and project risk reduction.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta" id="contact">
+        <h2>Today is the day.</h2>
+        <p>Ready to leverage systems thinking for your next biological project?</p>
+        <a href="mailto:your-email@example.com" class="btn">Let's Talk</a>
+    </section>
 
 </body>
 </html>
