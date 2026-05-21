@@ -73,18 +73,19 @@
         }
 
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 1.9rem;
             text-transform: uppercase;
             margin-bottom: 1.5rem;
             letter-spacing: 2px;
         }
 
         .hero p {
-            max-width: 800px;
+            max-width: 950px;
             margin: 0 auto;
             font-size: 1.2rem;
             font-weight: 300;
             color: #e2e8f0;
+            text-align: center;
         }
 
         /* Team / Profiles Section */
@@ -198,6 +199,23 @@
             display: block;
         }
 
+        .focus-strip {
+            background: var(--accent-color);
+            padding: 3rem 3%;
+            text-align: center;
+        }
+
+        .focus-strip p {
+            color: #ffffff;
+            font-size: 1.35rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .focus-strip p span {
+            font-weight: 600;
+        }
+
         /* Call to Action Footer */
         .cta {
             background: #e2e8f0;
@@ -235,20 +253,54 @@
 <body>
 
     <header>
-        <div class="logo">Simulenta Bio</div>
+        <div class="logo">Simulenta</div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#team">Team</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero" id="about">
-        <h1>Bridging Biology, Data, and Busines</h1>
-        <p>We are a strategic bio modelling consultancy firm with world-leading expertise in the use of computational systems to develop actionable insights. Our team combines academic rigor with real-world industry experience.</p>
+        <h1>Advanced modelling for scalable, commercially viable biomanufacturing</h1>
+        <p>Simulenta supports clients in the biopharmaceutical industry make faster, better-informed decisions through techno-economic analysis, kinetic modelling, and multiphysics simulation; helping to accelerate development, reduce experimental burden, and de-risk scale-up.</p>
+    </section>
+
+    <section class="content-section services-section" id="services">
+        <h2 class="section-title">Services</h2>
+        <div class="grid">
+
+            <div class="card service-card">
+                <div class="service-icon">&#9650;</div>
+                <h3>Technoeconomic Analysis</h3>
+                <p style="text-align: justify;">We help clients evaluate whether a manufacturing process is commercially viable, productuive, and scaleable. By identifying the key CapEx and OpEx drivers, we enable informed decisions about process routes and development priorities, replacing intuition with structured, quantitative comparisons. We build models that integrate process flows, equipment sizing, operating assumptions, and cost structure to connect process design to commercial reality. Past work includes techno-economic analysis for RNA and biologics manufacturing with clients including WHO, Sensible Biotechnologies, and Kernal Biologics. </p>
+
+                <img src="images/TEM.gif" alt="Technoeconomic Analysis placeholder" class="service-img">
+            </div>
+
+            <div class="card service-card">
+                <div class="service-icon">&#9632;</div>
+                <h3>Kinetic Modelling</h3>
+                <p style="text-align: justify;">We help clients understand how operating conditions affect process performance and product quality, enabling faster design space definition, optimisation, robustness and scale-up without the need for extensive experimentation. This reduces development time and cost, particularly in the early stages where experimental data is scarce. We build mechanistic models grounded in the underlying science of your system ( material balances, reaction behaviour, and transport phenomena) that simulate how a process responds to changing conditions and can be refined incrementally as new data becomes available. </p>
+
+                <img src="images/KMI.png" alt="Kinetic Modelling placeholder" class="service-img">
+            </div>
+
+            <div class="card service-card">
+                <div class="service-icon">&#9670;</div>
+                <h3>Multiphysics Simulation</h3>
+                <p style="text-align: justify;">We help clients design, optimise, and scale complex bioprocesses with confidence. By resolving how fluid dynamics, reaction kinetics, and mass transfer interact within an equipment or process, we identify what is limiting performance and quantify the impact of design changes before any experimental or capital commitment is made. We simulate processes as whole systems by coupling the relevant physical mechanisms into a single coherent model. This allows us to pinpoint issues such as poor mixing, dead zones, and uneven residence times, and test solutions in silico so that decisions are grounded in physics, derisking technology develoment.</p>
+                <img src="images/Platereactorgif.gif" alt="Multiphysics Simulation placeholder" class="service-img">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="focus-strip">
+        <p>We work across <span>mRNA</span>, <span>biologics</span>, and <span>advanced therapeutics</span></p>
     </section>
 
     <section class="content-section" id="team">
@@ -256,7 +308,7 @@
         <div class="grid">
 
             <div class="card">
-                <img src="images/ZK photo.jpg" alt="Professor Zoltan Kis" class="profile-pic">
+                <img src="images/ZKphoto.jpg" alt="Professor Zoltan Kis" class="profile-pic">
                 <h3>Professor Zoltan Kis</h3>
                 <h4>Consultant</h4>
                 <p style="text-align: justify;">Professor of Bioprocess Engineering at the University of Sheffield and Honorary Lecturer at Imperial College London. Leads research on RNA vaccine manufacturing, digital twins, and techno-economic modelling. PhD in Bioengineering from Imperial College London.</p>
@@ -290,37 +342,6 @@
                 <p>Placeholder text for Dr Martin Nicholson.</p>
             </div>
 -->
-
-        </div>
-    </section>
-
-    <section class="content-section services-section" id="services">
-        <h2 class="section-title">Services</h2>
-        <div class="grid">
-
-            <div class="card service-card">
-                <div class="service-icon">&#9650;</div>
-                <h3>Technoeconomic Analysis</h3>
-                <p style="text-align: justify;">We help clients evaluate whether a process is commercially viable and manufacturable at scale. By identifying the key CapEx and OpEx drivers, we enable informed decisions about process routes and development priorities, replacing intuition with structured, quantitative comparisons.</p>
-                <p style="text-align: justify; margin-top: 0.75rem;">We build models that integrate process flows, equipment sizing, operating assumptions, and cost structure to connect process design to commercial reality. Past work includes techno-economic analysis for RNA and biologics manufacturing with clients including WHO, Sensible Biotechnologies, and Kernal Biologics.</p>
-                <img src="images/placeholder_tea.png" alt="Technoeconomic Analysis placeholder" class="service-img">
-            </div>
-
-            <div class="card service-card">
-                <div class="service-icon">&#9632;</div>
-                <h3>Kinetic Modelling</h3>
-                <p style="text-align: justify;">We help clients understand how operating conditions affect process performance and product quality, enabling faster design space definition, optimisation, and scale-up without the need for extensive experimentation. This reduces development time and cost, particularly in the early stages where experimental data is scarce.</p>
-                <p style="text-align: justify; margin-top: 0.75rem;">We build mechanistic models grounded in the underlying science of your system — material balances, reaction behaviour, and transport phenomena — that simulate how a process responds to changing conditions and can be refined incrementally as new data becomes available.</p>
-                <img src="images/placeholder_kinetic.png" alt="Kinetic Modelling placeholder" class="service-img">
-            </div>
-
-            <div class="card service-card">
-                <div class="service-icon">&#9670;</div>
-                <h3>Multiphysics Simulation</h3>
-                <p style="text-align: justify;">We help clients design, optimise, and scale complex bioprocesses with confidence. By resolving how fluid dynamics, reaction kinetics, and mass transfer interact within a system, we identify what is limiting performance and quantify the impact of design changes before any experimental or capital commitment is made.</p>
-                <p style="text-align: justify; margin-top: 0.75rem;">We simulate processes as whole systems by coupling the relevant physical mechanisms into a single coherent model. This allows us to pinpoint issues such as poor mixing, dead zones, and uneven residence times, and test solutions in silico so that decisions are grounded in physics rather than guesswork.</p>
-                <img src="images/Platereactorgif.gif" alt="Multiphysics Simulation placeholder" class="service-img">
-            </div>
 
         </div>
     </section>
