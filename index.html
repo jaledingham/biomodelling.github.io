@@ -248,13 +248,162 @@
         .btn:hover {
             background: #287e7c;
         }
+
+        /* Hamburger menu — hidden on desktop */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+            background: none;
+            border: none;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.open span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .hamburger.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.open span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* ── Mobile styles ── */
+        @media (max-width: 768px) {
+            header {
+                padding: 1.25rem 5%;
+                position: relative;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #ffffff;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                z-index: 100;
+            }
+
+            nav.open {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0;
+                padding: 0.5rem 0;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 0.9rem 5%;
+                border-bottom: 1px solid #f0f0f0;
+                font-size: 0.95rem;
+            }
+
+            .hero {
+                padding: 3.5rem 5%;
+            }
+
+            .hero h1 {
+                font-size: 1.35rem;
+                letter-spacing: 1px;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .content-section {
+                padding: 3rem 5%;
+            }
+
+            .section-title {
+                font-size: 1.4rem;
+                margin-bottom: 2rem;
+            }
+
+            .grid {
+                gap: 1.5rem;
+            }
+
+            /* Cards go full-width on mobile */
+            .grid .card,
+            .grid .service-card {
+                width: 100%;
+                flex-shrink: 1;
+            }
+
+            .service-img {
+                height: 180px;
+            }
+
+            .focus-strip {
+                padding: 2rem 5%;
+            }
+
+            .focus-strip p {
+                font-size: 1.1rem;
+            }
+
+            .cta {
+                padding: 3rem 5%;
+            }
+
+            .cta h2 {
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                padding: 0.85rem 2rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* ── Small phone styles ── */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.15rem;
+            }
+
+            .logo {
+                font-size: 1.25rem;
+            }
+
+            .card {
+                padding: 1.25rem;
+            }
+        }
     </style>
 </head>
 <body>
 
     <header>
         <div class="logo">Simulenta</div>
-        <nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -355,7 +504,23 @@
         <p>Interested in working with us? Email us at <a href="mailto:enquiries@simulenta.com">enquiries@simulenta.com</a></p>
     </section>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('main-nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            nav.classList.toggle('open');
+        });
+
+        // Close nav when a link is tapped
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('open');
+                nav.classList.remove('open');
+            });
+        });
+    </script>
+
 </body>
 </html>
-
-
